@@ -1,0 +1,95 @@
+/*---- Déclaration de variables*/
+:root{
+    --height-content: 80px;
+    --height-content-mob:40px;
+    --padding-nav: 40px;
+    --color-gris:#F2F2F2;
+    --color-bleu:#0065FC;
+    --color-blue-clair: #DEEBFF;
+}
+
+body{
+    margin: 0;
+    padding: 1px 0 0 0;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif, serif;
+}
+
+.container{
+    width: 100%;
+}
+
+.header,.filtres,#heberge{
+    width: 95%;
+    margin: auto;    
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: var(--height-content);
+
+}
+
+.header_menu_nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.header a{
+    text-decoration: none;  
+    height: var(--height-content); 
+    line-height: var(--height-content);
+    display: inline-block;
+}
+
+
+.header nav ul li a{
+    color: black;
+    text-align: center;
+    padding-left: var(--padding-nav);
+    padding-right: var(--padding-nav);
+
+}
+
+.header .header__insp a{
+    color: var(--color-bleu);
+    font-weight: 700;
+}
+
+.header .header--height{
+    height: var(--height-content);
+    line-height: var(--height-content);
+    /* border: 2px solid red; */
+}
+
+
+.header nav ul li,#footer ul li{
+    list-style: none;
+    margin: 0;
+}
+
+ul{
+    
+    margin: 0;
+    padding: 0;
+}
+
+
+.header nav ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header nav ul a.header--active{
+    color: var(--color-bleu);
+    border-top: var(--color-bleu) solid 2px;
+}
+
+.header nav ul a:hover{
+    color: var(--color-bleu);
+    border-top: var(--color-bleu) solid 2px;
+    text-decoration: none;
+}
